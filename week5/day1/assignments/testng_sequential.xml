@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lead Test Suite" preserve-order="true">
+    <test name="leadCreateTest" verbose="5" preserve-order="true">
+        <classes>
+            <class name="week5.day1.assignments.CreateLead"/>
+            <class name="week5.day1.assignments.DuplicateLead"/>
+        </classes>
+    </test>
+
+    <test name="leadUpdateTest" verbose="5" preserve-order="true">
+        <classes>
+            <class name="week5.day1.assignments.EditLead"/>
+            <class name="week5.day1.assignments.MergeLead"/>
+        </classes>
+    </test>
+
+    <test name="leadDeleteTest" verbose="5" preserve-order="true">
+        <classes>
+            <class name="week5.day1.assignments.DeleteLead"/>
+        </classes>
+    </test>
+
+</suite>
