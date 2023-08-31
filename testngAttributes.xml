@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Lead Attributes Test Suite" preserve-order="true">
+	<parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+	<parameter name="username" value="DemoSalesManager"></parameter>
+	<parameter name="password" value="crmsfa"></parameter>
+	<test thread-count="2" name="leadTest" verbose="5">
+
+		<groups>
+			<run>
+			<include name="Rgression"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="week6.day2.assignments.Lead" />
+
+			<!--  <class name="week6.day2.assignments.EditLead"/>
+            <class name="week6.day2.assignments.DeleteLead"/>-->
+		</classes>
+	</test>
+
+</suite>
