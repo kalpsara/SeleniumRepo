@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Salesforce Suite" preserve-order="true" parallel="tests">
+
+	<parameter name="url" value="https://login.salesforce.com/"></parameter>
+	<parameter name="username" value="kalpsara@testleaf.com"></parameter>
+	<parameter name="password" value="Welcome@123"></parameter>
+	<test thread-count="2" name="ChromeTest" verbose="5">
+		<parameter name="browser" value="Chrome"></parameter>
+		<classes>
+			<class name="marathon3.Salesforce" />
+			
+		</classes>
+	</test>
+	<test thread-count="5" name="EdgeTest"  verbose="5">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="marathon3.SalesforceEdge" />
+		</classes>
+	</test>
+
+</suite>
