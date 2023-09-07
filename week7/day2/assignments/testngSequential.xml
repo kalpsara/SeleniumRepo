@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="POM Sequential Testng suite" verbose="5">
+
+	<parameter name="url" value="http://leaftaps.com/opentaps/"></parameter>
+  <test thread-count="5" name="Lead Test Cases" preserve-order="true">
+  
+    <classes>
+     <class name="week7.day2.assignments.testcases.LoginTC"/>
+     <class name="week7.day2.assignments.testcases.CreateLeadTC"/>
+     <class name="week7.day2.assignments.testcases.EditLeadTC"/>
+     <class name="week7.day2.assignments.testcases.MergeLeadTC"/>
+ 	 <class name="week7.day2.assignments.testcases.DuplicateLeadTC"/>
+     <class name="week7.day2.assignments.testcases.DeleteLeadTC"/>
+  
+           
+    </classes>
+  </test> 
+</suite> 
